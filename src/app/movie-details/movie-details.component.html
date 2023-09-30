@@ -1,0 +1,22 @@
+<div class="detail-section">
+    <div class="container-fluid"  *ngFor="let tempmovies of movies">
+        <div class="card"
+        style=" width: 230px; height: 350px; border-radius: 30px; border-width: 5px; border-color: grey">
+
+        <img style="width:240px;height:160px;" class="card-img-top" src="{{tempmovies.imageUrl}}"
+        style="height: 350px; border-radius: 30px;">      
+
+    </div>
+    <div class="card-detail text-left" style="color: aliceblue;">
+        <a style="margin-left: 13px; margin-top: 23px;"  style="font-size:14px;">{{tempmovies.name | titlecase }}</a>
+        <a *ngIf="role=='user'" style="margin-right:0px;margin-top: 100px "style="font-size:8px" class="btn btn-primary">Add to Cart Movie</a>
+    </div>
+    <div class="card-detail text-left" style="color: aliceblue;">
+        <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+        <div class="price card-text" style=font-size:14px;>Price:{{ tempmovies.price | currency:'USD' }} {{tempmovies.language}} imdb:{{tempmovies.imdb}}</div>
+        <!-- <h6 style="font-size:14px;">Langauge:{{tempmovies.language}} imdb:{{tempmovies.imdb}}</h6> -->
+        <!-- <a *ngIf="role=='Admin'" style="margin-right:0px;margin-top: 100px "style="font-size:8px" class="btn btn-success">Edit</a>
+        <a *ngIf="role=='Admin'" style="margin-right:0px;margin-top: 100px "style="font-size:8px" class="btn btn-danger">Remove</a> -->
+
+    </div>
+</div>

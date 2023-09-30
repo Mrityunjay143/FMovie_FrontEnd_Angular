@@ -1,0 +1,59 @@
+<div class="container" style="font-family: cursive;">
+    <div class="card col-sm-6 my-5" style="border-width: 5px; border-color: gray; left: 30%; top: 30px;">
+
+        <p style="text-align: center;">Add Movies Details</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="mb-5">
+                    <label class="form-label">Name</label>
+                    <input type="text" [(ngModel)]="movies1.name" placeholder="Movie Name" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Country</label>
+                    <input [(ngModel)]="movies1.country" placeholder="Country" type="text" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Language</label>
+                    <input type="text" [(ngModel)]="movies1.language" placeholder="language" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Type</label>
+                    <input type="text" [(ngModel)]="movies1.genre" placeholder="Type" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">ImgUrl</label>
+                    <input type="text" [(ngModel)]="movies1.imgUrl" placeholder="Type" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">IMDB</label>
+                    <input type="text" [(ngModel)]="movies1.imdb" placeholder="Type" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Price</label>
+                    <input type="text" [(ngModel)]="movies1.Price" placeholder="Type" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <input type="text" [(ngModel)]="movies1.Description" placeholder="Type" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+            </div>
+
+
+        </div>
+        <button type="submit" (click)="addMovies()" class="btn btn-primary" style="width: 150px;">Add Movies</button>
+        <a style="color: darkblue;; margin-top: 10px; cursor: pointer;" routerLink="/login"><u>Already Member ? Click to
+                login </u></a>
+    </div>
+</div>
